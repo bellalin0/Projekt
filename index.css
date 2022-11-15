@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "RockSalt";
+    src: url(font/Rock_Salt/RockSalt-Regular.ttf)
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: RockSalt;
+    font-size: 30px;
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+body > div {
+    background-color: rgba(0, 0, 0, 0.531);
+    border-radius: 20px;
+
+    margin: 150px 50px;
+}
+
+header > h1 {
+    color: white;
+    font-size: 50px;
+
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    margin: 10px;
+    margin-bottom: 70px;  
+}
+
+nav > div {
+    background-color: rgba(255, 255, 255, 0.535);
+    margin: 2px;
+    border-radius: 5px;
+    padding: 20px;
+
+    width: 100%;
+    justify-content: stretch;
+    text-align: center;
+}
+
+.marked {
+    border: 1px solid rgb(255, 255, 255);
+    font-weight: bold;
+    box-shadow: 0 0 8px white;
+}
+
+main {
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+.best {
+    background-color: rgba(0, 0, 0, 0.463);
+    border-radius: 20px;
+    border: 0.5px solid white;
+    
+    padding: 0 20px;
+    margin: 20px;
+}
+
+.unmarked:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.495);
+    color: white;
+}
