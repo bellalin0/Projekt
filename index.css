@@ -4,7 +4,11 @@
 }
 
 body {
+    background-image: url("images/MacDemarco_background_image.jpg");
+    background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 h1 {
@@ -69,10 +73,58 @@ li {
     
     padding: 0 20px;
     margin: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);    
 }
 
 .unmarked:hover {
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.495);
     color: white;
+}
+
+img {
+    height: 400px;
+    border-radius: 20px 20px 0 0;
+}
+
+
+.box-one {
+    background-color: skyblue;
+    border-radius: 0 0 0 20px;
+    width: 200px;
+}
+
+.box-two {
+    background-color: skyblue;
+    border-radius: 0 0 20px 0;
+    width: 200px;
+}
+
+.show_hover {
+    display: none;
+}
+
+.top_right_90 {
+    background-color: rgb(130, 168, 201);
+
+}
+
+.cover {
+    grid-column: 4 / span 2;
+}
+
+.song_list {
+    display: flex;
+    grid-column: 4 / span 2;
+}
+
+.album_data {
+    grid-column: 1 / span 3;
+}
+
+.anecdotes {
+    display: flex;
+    grid-column: 1 / span 5;
 }
