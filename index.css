@@ -10,13 +10,7 @@ body {
     background-attachment: fixed;
     background-position: center;
 }
-
-h1 {
-    font-family: RockSalt;
-    font-size: 30px;
-    margin: 0;
-}
-
+    
 h2 {
     margin: 0;
 }
@@ -28,11 +22,24 @@ body > div {
     margin: 150px 50px;
 }
 
+footer {
+    padding: 100px 0 20px 20px;
+    color: white;
+    font-size: 1.5vw;
+}
+
 header > h1 {
     color: white;
-    font-size: 50px;
-
     padding: 20px;
+    font-family: RockSalt;
+    font-size: 6vw;
+    margin: 0;
+}
+
+div > h1 {
+    font-size: 3vw;
+    font-family: RockSalt;
+    margin: 0;
 }
 
 nav {
@@ -43,6 +50,7 @@ nav {
 
 nav > div {
     background-color: rgba(255, 255, 255, 0.535);
+    font-size: 2vw;
     margin: 2px;
     border-radius: 5px;
     padding: 20px;
@@ -60,6 +68,7 @@ nav > div {
 
 main {
     color: white;
+    font-size: 1vw;
 }
 
 li {
@@ -85,38 +94,32 @@ li {
 }
 
 img {
-    height: 400px;
+    margin-top: 20px;
+    width: 100%;
     border-radius: 20px 20px 0 0;
-}
-
-
-.box-one {
-    background-color: skyblue;
-    border-radius: 0 0 0 20px;
-    width: 200px;
-}
-
-.box-two {
-    background-color: skyblue;
-    border-radius: 0 0 20px 0;
-    width: 200px;
-}
-
-.show_hover {
-    display: none;
-}
-
-.top_right_90 {
-    background-color: rgb(130, 168, 201);
-
-}
-
-.cover {
-    grid-column: 4 / span 2;
 }
 
 .song_list {
     display: flex;
+    grid-column: 4 / span 2; 
+    
+    margin-top: 10px;
+    gap: 15px;
+}  
+
+.top_demo {
+    background-color: rgb(120, 71, 121);
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 0 0 20px 20px;
+}
+
+#here_comes_the_cowboy .top_demo {
+    background-color: rgb(230, 204, 90);
+}
+
+.cover {
     grid-column: 4 / span 2;
 }
 
@@ -127,4 +130,73 @@ img {
 .anecdotes {
     display: flex;
     grid-column: 1 / span 5;
+    padding: 0;
+    gap: 10px;
 }
+
+#salad_days .box {
+    background-color: skyblue;
+    padding: 20px;
+}
+
+#here_comes_the_cowboy .box {
+    background-color: rgb(101, 156, 101);
+    padding: 20px;
+}
+
+#salad_days .top_right_90 {
+    width: 16.5%;
+    border-radius: 20px 0 20px 20px;
+}
+
+#salad_days .empty {
+    width: 16.5%;
+}
+
+#salad_days .bottom_left_90 {
+    width: 33%;
+    border-radius: 20px 20px 20px 0;
+}
+
+#salad_days .tablet_empty {
+    display: none;
+}
+
+#salad_days .phone_empty {
+    display: none;
+}
+
+#salad_days .top_left_90 {
+    width: 16.5%;
+    border-radius: 0 20px 20px 20px;
+}
+
+#salad_days .bottom_right_90 {
+    width: 15%;
+    border-radius: 20px 20px 0 20px;
+}
+
+#here_comes_the_cowboy .bottom_left_90 {
+    width: 33%;
+    border-radius: 20px 20px 20px 0;
+}
+
+#here_comes_the_cowboy .top_left_90 {
+    width: 16.5%;
+    border-radius: 0 20px 20px 20px;
+}
+
+#here_comes_the_cowboy .tablet_empty {
+    display: none;
+}
+
+#here_comes_the_cowboy .image {
+    width: 33%;
+    border-radius: 0 20px 20px 20px;
+}
+
+#here_comes_the_cowboy .bottom_right_90 {
+    width: 15%;
+    border-radius: 20px 20px 0 20px;
+}
+
