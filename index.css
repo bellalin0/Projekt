@@ -25,7 +25,7 @@ body > div {
 footer {
     padding: 100px 0 20px 20px;
     color: white;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
 }
 
 header > h1 {
@@ -50,7 +50,7 @@ nav {
 
 nav > div {
     background-color: rgba(255, 255, 255, 0.535);
-    font-size: 2vw;
+    font-size: 1.5vw;
     margin: 2px;
     border-radius: 5px;
     padding: 20px;
@@ -108,19 +108,23 @@ img {
 }  
 
 .top_demo {
-    background-color: rgb(120, 71, 121);
+    background-color: #374663;
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
     border-radius: 0 0 20px 20px;
 }
 
-#here_comes_the_cowboy .top_demo {
-    background-color: rgb(230, 204, 90);
+#salad_days .top_demo {
+    color: #FFDDC2;
 }
 
-.cover {
-    grid-column: 4 / span 2;
+#here_comes_the_cowboy .top_demo {
+    color:#1C473A;
+}
+
+#here_comes_the_cowboy .top_demo {
+    background-color: #dfab63;
 }
 
 .album_data {
@@ -134,13 +138,39 @@ img {
     gap: 10px;
 }
 
+.album_description {
+    padding-right: 20px;
+}
+
+#salad_days .image {
+    background-image: url(images/MacDemarco_demo.jpg);
+    background-size: cover;
+}
+
+#here_comes_the_cowboy .image {
+    background-image: url(images/MacDemarco_levy.jpg);
+    background-size: cover;
+}
+
+.image {
+    display: flex;
+    align-items: flex-end;
+    text-shadow: 0 0 4px black;
+    background-position: center;
+}
+
+.top_left_90 {
+    width: 12%;
+}
+
 #salad_days .box {
-    background-color: skyblue;
+    background-color: #FFDDC2;
     padding: 20px;
+    color: #374663;
 }
 
 #here_comes_the_cowboy .box {
-    background-color: rgb(101, 156, 101);
+    background-color: #1C473A;
     padding: 20px;
 }
 
@@ -169,6 +199,7 @@ img {
 #salad_days .top_left_90 {
     width: 16.5%;
     border-radius: 0 20px 20px 20px;
+    color: white;
 }
 
 #salad_days .bottom_right_90 {
@@ -199,4 +230,25 @@ img {
     width: 15%;
     border-radius: 20px 20px 0 20px;
 }
+
+.cover {
+    grid-column: 4 / span 2;
+    position: relative;
+}
+
+.show_hover {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 1s;
+    position: absolute;
+    right: 0;
+}
+
+.show_hover:hover {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+
+
 
